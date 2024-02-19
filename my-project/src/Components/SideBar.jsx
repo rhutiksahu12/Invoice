@@ -12,6 +12,8 @@ import { MdOutlineInventory } from "react-icons/md";
 import { BiSolidOffer } from "react-icons/bi";
 import { IoIosCloudUpload } from "react-icons/io";
 import { IoIosLogOut } from "react-icons/io";
+import { CgFileDocument } from "react-icons/cg";
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -19,6 +21,11 @@ const sideBarData = [
     {
         text: "Invoices",
         icon: <FaFile />
+    },
+    {
+        text:"Terms",
+        icon:<CgFileDocument />,
+        path:"/terms"
     },
     {
         text: "Customer",
@@ -85,10 +92,10 @@ const SideBar = ({isSidebarOpen}) => {
             <ul className={`grid justify-center ${isMobileOpen ? 'mobile-open' : ''}`}>
                 {sideBarData.map((item, index) => (
                     <li key={index} className='md:m-2'>
-                        <div className='flex items-center gap-2 md:gap-3 text-base md:text-lg p-1 md:hover:bg-gray-300 rounded-xl'>
+                        <NavLink to={item.path} className='flex items-center gap-2 md:gap-3 text-base md:text-lg p-1 md:hover:bg-gray-300 rounded-xl'>
                             <div>{item.icon}</div>
                             <span>{item.text}</span>
-                        </div>
+                        </NavLink>
                     </li>
                 ))}
             </ul>

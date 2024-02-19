@@ -41,7 +41,7 @@ const PriceList = () => {
             <div className='w-full px-5 my-8'>
                 <div className='md:mx-10 flex flex-col md:flex-row  items-center justify-between my-8'>
                     <div className='grid gap-2 w-full'>
-                        <div className='mb-4 md:mb-0'>
+                        <div className='mb-4 md:mb-0 text-sm'>
                             <input
                                 type='search'
                                 placeholder='Search Article No...'
@@ -50,7 +50,7 @@ const PriceList = () => {
                                 className='w-full md:w-80 border p-3 py-1 rounded-xl'
                             />
                         </div>
-                        <div className='mb-4 md:mb-0'>
+                        <div className='mb-4 md:mb-0 text-sm'>
                             <input
                                 type='search'
                                 placeholder='Search Product...'
@@ -62,19 +62,19 @@ const PriceList = () => {
                     </div>
                     <div className='flex item-center justify-around mt-4 sm:mt-0 md:justify-between w-full sm:w-auto gap-3'>
                         <div>
-                            <button className='flex  items-center gap-1 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
+                            <button className='flex text-sm items-center gap-2 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
                                 <span className='hidden md:block'>New Product</span>
                                 <span className=' text-green-500 flex justify-center' ><IoMdAddCircle size={20} /></span>
                             </button>
                         </div>
                         <div>
-                            <button className='flex items-center gap-1 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
+                            <button className='flex text-sm items-center gap-2 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
                                 <span className='hidden md:block'>Price List</span>
                                 <span className='flex justify-center text-cyan-400/60' ><AiFillPrinter size={20} /></span>
                             </button>
                         </div>
                         <div>
-                            <button className='flex items-center gap-1 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
+                            <button className='flex text-sm items-center gap-2 shadow-md px-3 py-1 md:px-5 md:py-2 rounded-xl text-black/50 w-20 md:w-auto text-center' onClick={() => setIsOpen(true)}>
                                 <span className='hidden md:block'>Advanced Mobile</span>
                                 <span className='flex justify-center text-cyan-400/60' ><IoToggleSharp size={20} /></span>
                             </button>
