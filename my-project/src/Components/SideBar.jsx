@@ -41,7 +41,8 @@ const sideBarData = [
     },
     {
         text: "Price List",
-        icon: <IoPricetagOutline />
+        icon: <IoPricetagOutline />,
+        path: "/"
     },
     {
         text: "Multiple Invoicing",
